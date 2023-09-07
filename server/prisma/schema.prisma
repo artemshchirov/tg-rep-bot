@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Reputations {
+	id Int @default(autoincrement()) @id
+	telegramId String
+	username String
+	fullName String
+	reputation Int @default(0)
+	userAvatar String
+}
