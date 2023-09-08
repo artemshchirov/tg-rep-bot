@@ -124,7 +124,7 @@ export class BotService implements OnModuleInit {
             [
               {
                 text: 'Статистика чата',
-                url: 'http://example.com',
+                url: 'https://members-reputation.vercel.app',
               },
             ],
           ],
