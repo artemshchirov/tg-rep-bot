@@ -92,6 +92,10 @@ export class BotService implements OnModuleInit {
     });
   }
 
+  async getAllReputations(): Promise<Reputations[]> {
+    return await this.prisma.reputations.findMany();
+  }
+
   async removeReputation(telegramId: string) {
     const user = await this.prisma.reputations.findFirst({
       where: { telegramId },
