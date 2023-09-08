@@ -189,7 +189,7 @@ export class BotService implements OnModuleInit {
     }`;
     const fullName = `${msg.reply_to_message.from?.first_name} ${msg.reply_to_message.from?.last_name}`;
 
-    await this.increaseReputation(telegramId, username, userAvatar, fullName);
+    await this.increaseReputation(telegramId, username, fullName, userAvatar);
 
     await this.sendReputationMessage(
       msg.chat.id,
