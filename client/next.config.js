@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ['api.telegram.org'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
