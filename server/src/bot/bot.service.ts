@@ -23,6 +23,7 @@ export class BotService implements OnModuleInit {
       'благодарю',
       'мерси',
       'спсб',
+      'заработало',
       'респект',
       'благодарен',
       'признателен',
@@ -43,7 +44,7 @@ export class BotService implements OnModuleInit {
     bot.on('new_chat_members', (msg) =>
       bot.sendMessage(
         msg.chat.id,
-        `Привет, ${msg.new_chat_members[0].first_name}. Welcome в наш чат!`,
+        `Привет, ${msg.new_chat_members[0].first_name}. Welcome в dev чат!`,
       ),
     );
 
@@ -117,7 +118,7 @@ export class BotService implements OnModuleInit {
 
     bot.sendMessage(
       chatId,
-      `Поздравляю, ${replyUsername} ! Участник ${fromUsername} повысил твою репутацию, так держать! Твоя репутация ${reputationData.reputation} 🏆`,
+      `Поздравляю, ${replyUsername}! Участник ${fromUsername} повысил твою репутацию, так держать! Твоя репутация ${reputationData.reputation} 🏆`,
       {
         reply_markup: {
           inline_keyboard: [
