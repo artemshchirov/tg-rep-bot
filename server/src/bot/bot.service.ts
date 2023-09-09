@@ -117,7 +117,7 @@ export class BotService implements OnModuleInit {
 
     bot.sendMessage(
       chatId,
-      `Поздравляю, ${replyUsername} ! Участник ${fromUsername} повысил твою репутацию, так держать! Твоя репутация ${reputationData.reputation}`,
+      `Поздравляю, ${replyUsername} ! Участник ${fromUsername} повысил твою репутацию, так держать! Твоя репутация ${reputationData.reputation} 🏆`,
       {
         reply_markup: {
           inline_keyboard: [
